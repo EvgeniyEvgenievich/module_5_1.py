@@ -8,7 +8,8 @@ class House:
         if new_floor > self.number_of_floors or new_floor < 1:
             print('Такого этажа не существует')
         else:
-            print(f'Вы перешли на {new_floor} этаж в {self.name}.')
+            for floor in range(1, new_floor):
+                print(floor)
 
 
 h1 = House('ЖК Горский', 18)
